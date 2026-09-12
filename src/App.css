@@ -136,3 +136,16 @@ video {
     scroll-behavior: auto !important;
   }
 }
+
+@media (max-width: 639px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    overflow-wrap: break-word;
+  }
+}

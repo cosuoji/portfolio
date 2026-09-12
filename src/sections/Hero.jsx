@@ -22,8 +22,8 @@ function Hero() {
         </div>
 
         {/* Bottom information */}
-        <div className="mt-16 flex items-end justify-between border-t border-line pt-4 sm:mt-20">
-          <p className="hero-meta max-w-[280px] font-sans text-[10px] uppercase leading-[1.5] tracking-[0.16em] text-muted sm:text-xs">
+        <div className="mt-14 flex items-end justify-between border-t border-line pt-4 sm:mt-20">
+          <p className="hero-meta max-w-[220px] font-sans text-[10px] uppercase leading-[1.5] tracking-[0.16em] text-muted sm:text-xs">
             Digital products built
             <br />
             from interface to infrastructure.

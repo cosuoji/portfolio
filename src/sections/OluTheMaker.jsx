@@ -1,15 +1,18 @@
 import { assets } from "../data/assets";
+import { useRef } from "react";
+
 
 function OluTheMaker() {
   return (
     <section
+      data-project-section
       id="olu-the-maker"
       className="relative overflow-hidden bg-[#e9e2d5] text-[#171512]"
     >
       {/* Intro */}
       <div className="mx-auto w-full max-w-[1800px] px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-12 lg:pb-36 lg:pt-48">
         <div className="flex items-start justify-between">
-          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#716b61] sm:text-xs">
+          <p data-project-number className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#716b61] sm:text-xs">
             01 / 04
           </p>
 
@@ -21,7 +24,7 @@ function OluTheMaker() {
         </div>
 
         <div className="mt-16 sm:mt-24 lg:mt-28">
-          <h2 className="font-display text-[22vw] leading-[0.72] tracking-[-0.05em] sm:text-[17vw] lg:text-[14vw]">
+          <h2 data-project-heading className="font-display text-[22vw] leading-[0.72] tracking-[-0.05em] sm:text-[17vw] lg:text-[14vw]">
             OLU
             <br />
             <span className="italic">THE MAKER</span>
@@ -29,7 +32,7 @@ function OluTheMaker() {
         </div>
 
         <div className="mt-16 flex justify-end sm:mt-24">
-          <p className="max-w-[280px] font-sans text-xs uppercase leading-[1.6] tracking-[0.12em] text-[#514c45] sm:max-w-[360px] sm:text-sm">
+          <p data-reveal className="max-w-[280px] font-sans text-xs uppercase leading-[1.6] tracking-[0.12em] text-[#514c45] sm:max-w-[360px] sm:text-sm">
             A digital home for a men's lifestyle luxury brand — bringing
             together culture, editorial content, and commerce.
           </p>
@@ -40,6 +43,7 @@ function OluTheMaker() {
       <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-8 lg:px-12">
         <div className="overflow-hidden bg-[#d8d0c2]">
           <img
+            data-project-image
             src={assets.oluTheMaker.imageOne}
             alt="Olu The Maker website"
             className="w-full object-cover"
@@ -102,6 +106,7 @@ function OluTheMaker() {
 
               <div className="overflow-hidden bg-[#d8d0c2]">
                 <img
+                  data-image-reveal
                   src={assets.oluTheMaker.imageThree}
                   alt="Olu The Maker commerce experience"
                   className="w-full object-cover"
@@ -114,7 +119,7 @@ function OluTheMaker() {
       </div>
 
       {/* Project information */}
-      <div className="border-t border-[#c9c1b5]">
+      <div data-reveal className="border-t border-[#c9c1b5]">
         <div className="mx-auto flex max-w-[1800px] flex-col gap-10 px-6 py-10 sm:px-8 sm:py-12 lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <div>
             <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-[#716b61]">

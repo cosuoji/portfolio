@@ -30,7 +30,7 @@ function ContactSection() {
         </div>
 
         {/* Contact links */}
-        <div className="border-t border-white/20">
+        <div data-reveal className="border-t border-white/20">
           <div className="grid sm:grid-cols-2">
             <a
               href="https://wa.me/2348162317196"

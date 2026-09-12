@@ -3,13 +3,14 @@ import { assets } from "../data/assets";
 function AbegFix() {
   return (
     <section
+      data-project-section
       id="abeg-fix"
       className="relative overflow-hidden bg-[#edf1f3] text-[#101416]"
     >
       {/* Intro */}
       <div className="mx-auto w-full max-w-[1800px] px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-12 lg:pb-36 lg:pt-48">
         <div className="flex items-start justify-between">
-          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#687176] sm:text-xs">
+          <p data-project-number className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#687176] sm:text-xs">
             02 / 04
           </p>
 
@@ -21,7 +22,7 @@ function AbegFix() {
         </div>
 
         <div className="mt-16 sm:mt-24 lg:mt-28">
-          <h2 className="font-display text-[23vw] leading-[0.7] tracking-[-0.05em] sm:text-[18vw] lg:text-[15vw]">
+          <h2 data-project-heading className="font-display text-[23vw] leading-[0.7] tracking-[-0.05em] sm:text-[18vw] lg:text-[15vw]">
             ABEG
             <br />
             <span className="italic">FIX</span>
@@ -51,6 +52,7 @@ function AbegFix() {
           </div>
 
           <img
+            data-image-reveal
             src={assets.abegFix.directory}
             alt="AbegFix artisan directory"
             className="w-full object-cover"
@@ -60,7 +62,7 @@ function AbegFix() {
       </div>
 
       {/* Product logic */}
-      <div className="mx-auto max-w-[1800px] px-6 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-40">
+      <div data-reveal className="mx-auto max-w-[1800px] px-6 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-40">
         <div className="grid gap-16 lg:grid-cols-[0.65fr_1.35fr]">
           {/* Sticky narrative */}
           <div className="lg:sticky lg:top-32 lg:h-fit">
@@ -158,6 +160,7 @@ function AbegFix() {
       <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-8 lg:px-12">
         <div className="ml-auto max-w-[1200px] overflow-hidden border border-[#cbd2d5] bg-white">
           <img
+            data-project-image
             src={assets.abegFix.profile}
             alt="AbegFix artisan profile"
             className="w-full object-cover"

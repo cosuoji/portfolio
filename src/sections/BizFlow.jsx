@@ -31,13 +31,14 @@ const workflow = [
 function BizFlow() {
   return (
     <section
+      data-project-section
       id="bizflow"
       className="relative overflow-hidden bg-[#07100c] text-[#eef4ef]"
     >
       {/* Intro */}
       <div className="mx-auto w-full max-w-[1800px] px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-12 lg:pb-36 lg:pt-48">
         <div className="flex items-start justify-between">
-          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#708078] sm:text-xs">
+          <p data-project-number className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#708078] sm:text-xs">
             04 / 04
           </p>
 
@@ -49,7 +50,7 @@ function BizFlow() {
         </div>
 
         <div className="mt-16 sm:mt-24 lg:mt-28">
-          <h2 className="font-display text-[24vw] leading-[0.68] tracking-[-0.055em] sm:text-[18vw] lg:text-[15vw]">
+          <h2 data-project-heading className="font-display text-[24vw] leading-[0.68] tracking-[-0.055em] sm:text-[18vw] lg:text-[15vw]">
             BIZ
             <br />
             <span className="italic">FLOW</span>
@@ -85,6 +86,7 @@ function BizFlow() {
           </div>
 
           <img
+            data-project-image
             src={assets.bizFlow.dashboard}
             alt="BizFlow business management dashboard"
             className="w-full object-cover"
@@ -150,6 +152,7 @@ function BizFlow() {
         <div className="grid gap-5 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
           <div className="order-2 overflow-hidden border border-[#203229] bg-[#0d1712] lg:order-1">
             <img
+              data-image-reveal
               src={assets.bizFlow.marketing}
               alt="BizFlow product interface"
               className="w-full object-cover"
@@ -159,6 +162,7 @@ function BizFlow() {
 
           <div className="order-1 overflow-hidden border border-[#203229] bg-[#0d1712] lg:order-2">
             <img
+              data-image-reveal
               src={assets.bizFlow.landing}
               alt="BizFlow website"
               className="w-full object-cover"
@@ -169,7 +173,7 @@ function BizFlow() {
       </div>
 
       {/* Technical statement */}
-      <div className="mx-auto max-w-[1800px] px-6 py-28 sm:px-8 sm:py-36 lg:px-12 lg:py-48">
+      <div data-reveal className="mx-auto max-w-[1800px] px-6 py-28 sm:px-8 sm:py-36 lg:px-12 lg:py-48">
         <div className="grid gap-12 lg:grid-cols-[0.5fr_1.5fr]">
           <p className="font-sans text-[10px] uppercase tracking-[0.2em] text-[#708078] sm:text-xs">
             Built end to end

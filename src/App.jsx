@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 import { initHeroAnimation } from "./animations/hero";
+import { initRevealAnimations } from "./animations/reveals";
+import { initProjectAnimations } from "./animations/projects";
+import { initProjectSectionAnimations } from "./animations/projectSections";
+
+
 //Components
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
@@ -20,9 +25,17 @@ import ContactSection from "./sections/ContactSection";
 
 function App() {
   useEffect(() => {
-    const cleanup = initHeroAnimation();
+    const heroCleanup = initHeroAnimation();
+    const revealCleanup = initRevealAnimations();
+    const projectCleanup = initProjectAnimations();
+    const projectSectionCleanup = initProjectSectionAnimations();
 
-    return cleanup;
+    return () => {
+      heroCleanup?.();
+      revealCleanup?.();
+      projectCleanup?.();
+      projectSectionCleanup?.();
+    };
   }, []);
 
   return (

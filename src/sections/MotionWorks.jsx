@@ -3,13 +3,14 @@ import { assets } from "../data/assets";
 function MotionWorks() {
   return (
     <section
+      data-project-section
       id="motion-works"
       className="relative overflow-hidden bg-[#0b0b0b] text-[#f1f0eb]"
     >
       {/* Intro */}
       <div className="mx-auto w-full max-w-[1800px] px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40 lg:px-12 lg:pb-36 lg:pt-48">
         <div className="flex items-start justify-between">
-          <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#777772] sm:text-xs">
+          <p data-project-number className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#777772] sm:text-xs">
             03 / 04
           </p>
 
@@ -21,7 +22,7 @@ function MotionWorks() {
         </div>
 
         <div className="mt-16 sm:mt-24 lg:mt-28">
-          <h2 className="font-display text-[22vw] leading-[0.7] tracking-[-0.05em] sm:text-[17vw] lg:text-[14vw]">
+          <h2 data-project-heading className="font-display text-[22vw] leading-[0.7] tracking-[-0.05em] sm:text-[17vw] lg:text-[14vw]">
             MOTION
             <br />
             <span className="italic">WORKS</span>
@@ -50,6 +51,7 @@ function MotionWorks() {
           </div>
 
           <img
+            data-project-image
             src={assets.motionWorks.imageTwo}
             alt="Motion Works music distribution platform"
             className="w-full object-cover"
@@ -59,7 +61,7 @@ function MotionWorks() {
       </div>
 
       {/* System flow */}
-      <div className="mx-auto max-w-[1800px] px-6 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-44">
+      <div data-reveal className="mx-auto max-w-[1800px] px-6 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-44">
         <div className="mb-14 flex items-end justify-between border-b border-[#292929] pb-5 sm:mb-20">
           <p className="font-sans text-[10px] font-medium uppercase tracking-[0.2em] text-[#777772] sm:text-xs">
             The system
@@ -124,6 +126,7 @@ function MotionWorks() {
         <div className="grid gap-5 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
           <div className="overflow-hidden border border-[#292929] bg-[#111111]">
             <img
+              data-image-reveal
               src={assets.motionWorks.imageThree}
               alt="Motion Works catalogue interface"
               className="w-full object-cover"
@@ -133,6 +136,7 @@ function MotionWorks() {
 
           <div className="overflow-hidden border border-[#292929] bg-[#111111]">
             <img
+              data-image-reveal
               src={assets.motionWorks.imageOne}
               alt="Motion Works platform interface"
               className="w-full object-cover"
@@ -160,7 +164,7 @@ function MotionWorks() {
       </div>
 
       {/* Project footer */}
-      <div className="border-t border-[#292929]">
+      <div data-reveal className="border-t border-[#292929]">
         <div className="mx-auto flex max-w-[1800px] flex-col gap-10 px-6 py-10 sm:px-8 sm:py-12 lg:flex-row lg:items-end lg:justify-between lg:px-12">
           <div>
             <p className="font-sans text-[10px] uppercase tracking-[0.18em] text-[#777772]">
