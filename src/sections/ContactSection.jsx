@@ -77,7 +77,7 @@ function ContactSection() {
         {/* Footer */}
         <div className="flex flex-col gap-4 pt-12 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-sans text-[10px] uppercase tracking-[0.18em] opacity-40 sm:text-xs">
-            Chibueze Osuoji
+          <a href="https://github.com/cosuoji">GITHUB</a>
           </p>
 
           <p className="font-sans text-[10px] uppercase tracking-[0.18em] opacity-40 sm:text-xs">
